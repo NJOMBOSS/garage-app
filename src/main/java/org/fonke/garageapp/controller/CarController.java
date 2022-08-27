@@ -4,9 +4,10 @@ import org.fonke.garageapp.controller.api.CarApi;
 import org.fonke.garageapp.dto.CarDTO;
 import org.fonke.garageapp.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+@RestController
 public class CarController implements CarApi {
 
     private CarService carService;
